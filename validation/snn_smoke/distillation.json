@@ -1,0 +1,100 @@
+{
+  "method": "logistic-regression distillation of the exact integer SNN decision, selected on validation",
+  "feature_order_lsb_first": [
+    "blocked_streak_ge_2",
+    "blocked_streak_ge_5",
+    "request_cycles_ge_16",
+    "low_service_during_demand",
+    "downstream_occupancy_ge_depth_minus_1",
+    "recent_max_occupancy_ge_depth",
+    "occupancy_rising_or_requester_buffer_pressure"
+  ],
+  "equation": {
+    "feature_order_lsb_first": [
+      "blocked_streak_ge_2",
+      "blocked_streak_ge_5",
+      "request_cycles_ge_16",
+      "low_service_during_demand",
+      "downstream_occupancy_ge_depth_minus_1",
+      "recent_max_occupancy_ge_depth",
+      "occupancy_rising_or_requester_buffer_pressure"
+    ],
+    "coefficient_signed_8": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "bias_signed_12": -2,
+    "decision_threshold": 0,
+    "fixed_point_scale": 4,
+    "equation": "R = bias + sum(coefficient[i] * x[i]); predict congestion when R >= 0",
+    "arithmetic": "signed 12-bit saturating score, binary features, no floating-point inference"
+  },
+  "validation": {
+    "agreement_with_snn": 0.9779411764705882,
+    "ground_truth": {
+      "samples": 272,
+      "positive_samples": 51,
+      "positive_prevalence": 0.1875,
+      "accuracy": 0.9963235294117647,
+      "precision": 1.0,
+      "recall": 0.9803921568627451,
+      "f1": 0.99009900990099,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0196078431372549,
+      "confusion_matrix": [
+        [
+          221,
+          0
+        ],
+        [
+          1,
+          50
+        ]
+      ],
+      "balanced_accuracy": 0.9901960784313726,
+      "roc_auc": 0.9998669150918286,
+      "pr_auc_average_precision": 0.9996229260935142
+    },
+    "feature_samples": 272
+  },
+  "untouched_test": {
+    "agreement_with_snn": 0.9742647058823529,
+    "ground_truth": {
+      "samples": 272,
+      "positive_samples": 51,
+      "positive_prevalence": 0.1875,
+      "accuracy": 0.9926470588235294,
+      "precision": 1.0,
+      "recall": 0.9607843137254902,
+      "f1": 0.98,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0392156862745098,
+      "confusion_matrix": [
+        [
+          221,
+          0
+        ],
+        [
+          2,
+          49
+        ]
+      ],
+      "balanced_accuracy": 0.9803921568627452,
+      "roc_auc": 0.9993789370952001,
+      "pr_auc_average_precision": 0.9978007974678341
+    },
+    "feature_samples": 272
+  },
+  "acceptance": {
+    "minimum_snn_agreement": 0.95,
+    "minimum_ground_truth_accuracy": 0.9,
+    "minimum_congestion_recall": 0.7,
+    "maximum_false_positive_rate": 0.15
+  },
+  "test_gate_passed": true
+}

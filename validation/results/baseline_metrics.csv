@@ -1,0 +1,4 @@
+run_date,configuration,routing_mode,tf_pcr_enabled,seed,packets,average_latency_cycles,throughput_packets_per_cycle,tf_tp,tf_fp,tf_tn,tf_fn,tf_precision,tf_recall,tf_f1,tf_advance_events_detected,tf_advance_events_total,tf_mean_lead_cycles,occupancy_tp,occupancy_fp,occupancy_tn,occupancy_fn,occupancy_precision,occupancy_recall,occupancy_f1,occupancy_advance_events_detected,occupancy_advance_events_total,occupancy_mean_lead_cycles
+2026-10-25,xy_fixed,XY,1,0x4f1bc2d7,796,8.196,0.3324,23,47,206302,28,0.329,0.451,0.380,2,6,1.00,45,170,206179,6,0.209,0.882,0.338,5,6,1.00
+2026-10-25,west_first_existing_tfpcr,WestFirst,1,0x4f1bc2d7,796,8.196,0.3324,23,54,206295,28,0.299,0.451,0.359,2,6,1.00,45,170,206179,6,0.209,0.882,0.338,5,6,1.00
+2026-10-25,west_first_diagnostic_disabled,WestFirst,0,0x4f1bc2d7,796,8.196,0.3324,0,0,206349,51,0.000,0.000,0.000,0,6,,45,170,206179,6,0.209,0.882,0.338,5,6,1.00

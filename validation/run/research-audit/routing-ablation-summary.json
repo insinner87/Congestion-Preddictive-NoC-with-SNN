@@ -1,0 +1,845 @@
+{
+  "independent_seed_count": 10,
+  "seeds": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010
+  ],
+  "configs": {
+    "west-first": {
+      "average_latency": {
+        "mean": 8.052299999999999,
+        "sd": 0.08216250834643352,
+        "t95_ci_mean": [
+          7.993524482242505,
+          8.111075517757493
+        ],
+        "per_seed": [
+          8.056,
+          8.036,
+          8.119,
+          7.999,
+          7.984,
+          8.013,
+          8.088,
+          8.021,
+          7.963,
+          8.244
+        ]
+      },
+      "p95_latency": {
+        "mean": 22.7,
+        "sd": 0.48304589153964794,
+        "t95_ci_mean": [
+          22.354449785586354,
+          23.045550214413645
+        ],
+        "per_seed": [
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0
+        ]
+      },
+      "p99_latency": {
+        "mean": 53.3,
+        "sd": 0.9486832980505138,
+        "t95_ci_mean": [
+          52.62135285116054,
+          53.97864714883946
+        ],
+        "per_seed": [
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          56.0
+        ]
+      },
+      "throughput": {
+        "mean": 0.34016,
+        "sd": 0.005246204977568711,
+        "t95_ci_mean": [
+          0.33640709103915856,
+          0.3439129089608415
+        ],
+        "per_seed": [
+          0.3399,
+          0.345,
+          0.339,
+          0.3346,
+          0.3415,
+          0.3482,
+          0.3383,
+          0.3374,
+          0.3463,
+          0.3314
+        ]
+      },
+      "blocked_output_cycles": {
+        "mean": 99.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          99.0,
+          99.0
+        ],
+        "per_seed": [
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0
+        ]
+      },
+      "network_congested_cycles": {
+        "mean": 52.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          52.0,
+          52.0
+        ],
+        "per_seed": [
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0
+        ]
+      },
+      "longest_congestion_cycles": {
+        "mean": 43.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          43.0,
+          43.0
+        ],
+        "per_seed": [
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0
+        ]
+      },
+      "random_phase_alternate_hops": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          0.0,
+          0.0
+        ],
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "snn": {
+      "average_latency": {
+        "mean": 8.052299999999999,
+        "sd": 0.08216250834643352,
+        "t95_ci_mean": [
+          7.993524482242505,
+          8.111075517757493
+        ],
+        "per_seed": [
+          8.056,
+          8.036,
+          8.119,
+          7.999,
+          7.984,
+          8.013,
+          8.088,
+          8.021,
+          7.963,
+          8.244
+        ]
+      },
+      "p95_latency": {
+        "mean": 22.7,
+        "sd": 0.48304589153964794,
+        "t95_ci_mean": [
+          22.354449785586354,
+          23.045550214413645
+        ],
+        "per_seed": [
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0
+        ]
+      },
+      "p99_latency": {
+        "mean": 53.3,
+        "sd": 0.9486832980505138,
+        "t95_ci_mean": [
+          52.62135285116054,
+          53.97864714883946
+        ],
+        "per_seed": [
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          56.0
+        ]
+      },
+      "throughput": {
+        "mean": 0.34016,
+        "sd": 0.005246204977568711,
+        "t95_ci_mean": [
+          0.33640709103915856,
+          0.3439129089608415
+        ],
+        "per_seed": [
+          0.3399,
+          0.345,
+          0.339,
+          0.3346,
+          0.3415,
+          0.3482,
+          0.3383,
+          0.3374,
+          0.3463,
+          0.3314
+        ]
+      },
+      "blocked_output_cycles": {
+        "mean": 99.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          99.0,
+          99.0
+        ],
+        "per_seed": [
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0
+        ]
+      },
+      "network_congested_cycles": {
+        "mean": 52.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          52.0,
+          52.0
+        ],
+        "per_seed": [
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0
+        ]
+      },
+      "longest_congestion_cycles": {
+        "mean": 43.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          43.0,
+          43.0
+        ],
+        "per_seed": [
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0
+        ]
+      },
+      "random_phase_alternate_hops": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          0.0,
+          0.0
+        ],
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "equation": {
+      "average_latency": {
+        "mean": 8.052299999999999,
+        "sd": 0.08216250834643352,
+        "t95_ci_mean": [
+          7.993524482242505,
+          8.111075517757493
+        ],
+        "per_seed": [
+          8.056,
+          8.036,
+          8.119,
+          7.999,
+          7.984,
+          8.013,
+          8.088,
+          8.021,
+          7.963,
+          8.244
+        ]
+      },
+      "p95_latency": {
+        "mean": 22.7,
+        "sd": 0.48304589153964794,
+        "t95_ci_mean": [
+          22.354449785586354,
+          23.045550214413645
+        ],
+        "per_seed": [
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0,
+          23.0,
+          22.0,
+          23.0
+        ]
+      },
+      "p99_latency": {
+        "mean": 53.3,
+        "sd": 0.9486832980505138,
+        "t95_ci_mean": [
+          52.62135285116054,
+          53.97864714883946
+        ],
+        "per_seed": [
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          53.0,
+          56.0
+        ]
+      },
+      "throughput": {
+        "mean": 0.34016,
+        "sd": 0.005246204977568711,
+        "t95_ci_mean": [
+          0.33640709103915856,
+          0.3439129089608415
+        ],
+        "per_seed": [
+          0.3399,
+          0.345,
+          0.339,
+          0.3346,
+          0.3415,
+          0.3482,
+          0.3383,
+          0.3374,
+          0.3463,
+          0.3314
+        ]
+      },
+      "blocked_output_cycles": {
+        "mean": 99.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          99.0,
+          99.0
+        ],
+        "per_seed": [
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0,
+          99.0
+        ]
+      },
+      "network_congested_cycles": {
+        "mean": 52.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          52.0,
+          52.0
+        ],
+        "per_seed": [
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0,
+          52.0
+        ]
+      },
+      "longest_congestion_cycles": {
+        "mean": 43.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          43.0,
+          43.0
+        ],
+        "per_seed": [
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0,
+          43.0
+        ]
+      },
+      "random_phase_alternate_hops": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "t95_ci_mean": [
+          0.0,
+          0.0
+        ],
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "paired_comparisons": {
+    "snn_minus_west_first": {
+      "average_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "p95_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "p99_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "throughput": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "blocked_output_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "network_congested_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "longest_congestion_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "random_phase_alternate_hops": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "equation_minus_west_first": {
+      "average_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "p95_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "p99_latency": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "throughput": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "blocked_output_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "network_congested_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "longest_congestion_cycles": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "random_phase_alternate_hops": {
+        "mean_paired_difference": 0.0,
+        "sd_paired_difference": 0.0,
+        "t95_ci_difference": [
+          0.0,
+          0.0
+        ],
+        "cohens_dz": null,
+        "per_seed_differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "feature_order_lsb_first": [
+    "blocked_streak_ge_2",
+    "blocked_streak_ge_5",
+    "request_cycles_ge_16",
+    "low_service_during_demand",
+    "downstream_occupancy_ge_depth_minus_1",
+    "recent_max_occupancy_ge_depth",
+    "occupancy_rising_or_requester_buffer_pressure"
+  ],
+  "coefficient_signed_8": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+  ],
+  "bias_signed_12": -2,
+  "decision_threshold": 0,
+  "fixed_point_scale": 4,
+  "equation": "R = bias + sum(coefficient[i] * x[i]); predict congestion when R >= 0",
+  "arithmetic": "signed 12-bit saturating score, binary features, no floating-point inference"
+}

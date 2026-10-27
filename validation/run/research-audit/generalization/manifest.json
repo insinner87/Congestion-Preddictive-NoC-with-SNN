@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "label_horizon_cycles": 8,
+  "congestion_event": "blocked_streak >= 4 OR (downstream link FIFO occupancy >= 2 and a request is present)",
+  "workload_ids": {
+    "uniform": 0,
+    "hotspot": 1,
+    "transpose": 2,
+    "bursty": 3
+  },
+  "trace_cycles": 96,
+  "simulator_executable": "mesh_trace.vvp",
+  "simulator_versions": {
+    "iverilog": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+    "vvp": "Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)"
+  },
+  "compile_flags": [
+    "-g2012",
+    "-Wall",
+    "-s",
+    "mesh_trace_tb"
+  ],
+  "trace_configuration": {
+    "routing": "West-First",
+    "tf_pcr_enabled": true,
+    "snn_feature_capture": true,
+    "snn_route_feedback": false,
+    "equation_route_feedback": false,
+    "adaptive_buffer_pressure": true,
+    "priority_enabled": false,
+    "trace_router_nodes": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "link_fifo_depth": 2,
+    "sample_period_cycles": 1
+  },
+  "rtl_testbench": "sim/mesh/mesh_trace_tb.sv",
+  "seed_splits": {
+    "train": [],
+    "validation": [],
+    "test": [
+      4001,
+      4002
+    ]
+  },
+  "loads": [
+    30,
+    60,
+    85
+  ],
+  "workloads": [
+    "uniform",
+    "hotspot",
+    "transpose",
+    "bursty"
+  ],
+  "runs": [
+    {
+      "run_id": "test_s4001_l30_uniform",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 30,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l30_uniform.csv",
+      "raw_sha256": "c34993e2b50ad1c3399f915a5ec278dc1e0a4e3a98c123f464d203dcbdaa2dd2"
+    },
+    {
+      "run_id": "test_s4001_l30_hotspot",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 30,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l30_hotspot.csv",
+      "raw_sha256": "987ffbf06278ca9606cc2c698c7551ef5c471dea80cf0f09d9b95bc5f1507146"
+    },
+    {
+      "run_id": "test_s4001_l30_transpose",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 30,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l30_transpose.csv",
+      "raw_sha256": "f7484199a95a98ec9a4bc42f59b4a4df6adce7c5a7257ece72814ff277ce280e"
+    },
+    {
+      "run_id": "test_s4001_l30_bursty",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 30,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l30_bursty.csv",
+      "raw_sha256": "a8ddc1c842504aa1f8c34f7bead8ae2dee60aa9f5361980a40d447bdd7eaedf5"
+    },
+    {
+      "run_id": "test_s4001_l60_uniform",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 60,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l60_uniform.csv",
+      "raw_sha256": "6cfbbf4c1ed994d0307b7078273d536db176c133baf451c92b96a4eebfb9cbc9"
+    },
+    {
+      "run_id": "test_s4001_l60_hotspot",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 60,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l60_hotspot.csv",
+      "raw_sha256": "d396653060b9845c7f29778ef3eea734b714c55827cf1bf742947b7680ee2607"
+    },
+    {
+      "run_id": "test_s4001_l60_transpose",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 60,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l60_transpose.csv",
+      "raw_sha256": "859cf8a137ed33e9129d14d7717f4874f8ef3924b22777833e7a62dc64a8be0a"
+    },
+    {
+      "run_id": "test_s4001_l60_bursty",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 60,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l60_bursty.csv",
+      "raw_sha256": "38388efb945270f21137786bf8474cd6ab8b868fedb448a9c49aff57c2b04472"
+    },
+    {
+      "run_id": "test_s4001_l85_uniform",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 85,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l85_uniform.csv",
+      "raw_sha256": "0cb2c1233b451448d184c5b18d809bdf036f39f2f31e45fff08569f58d95f74a"
+    },
+    {
+      "run_id": "test_s4001_l85_hotspot",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l85_hotspot.csv",
+      "raw_sha256": "9a36e6de803c01d4182745c30739a223b3b179e3a2300077091a83ff4cb93b2b"
+    },
+    {
+      "run_id": "test_s4001_l85_transpose",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 85,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l85_transpose.csv",
+      "raw_sha256": "01e3323f94bdb4aaadb04f4d67217e1e30686b92e06f75904ccf3d51b837dcec"
+    },
+    {
+      "run_id": "test_s4001_l85_bursty",
+      "split": "test",
+      "seed": 4001,
+      "load_percent": 85,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4001_l85_bursty.csv",
+      "raw_sha256": "3f30e8203fb3596e15869f9a8b405d890b023e33a54fff6f16af24c86887bcea"
+    },
+    {
+      "run_id": "test_s4002_l30_uniform",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 30,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l30_uniform.csv",
+      "raw_sha256": "20aa7d2c9286fadf7f429089991ab8dcf78c74c8e5f7f2037dc9362f92b75992"
+    },
+    {
+      "run_id": "test_s4002_l30_hotspot",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 30,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l30_hotspot.csv",
+      "raw_sha256": "6eb5bf2bab022ddb7eeaa3aefa68aae4ef3b1d0b6f97b991f77efd8bc57eaae8"
+    },
+    {
+      "run_id": "test_s4002_l30_transpose",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 30,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l30_transpose.csv",
+      "raw_sha256": "8b863b723054f36d1640d4857afe3cdc933c84aba41d5b9528e929e24985f8ad"
+    },
+    {
+      "run_id": "test_s4002_l30_bursty",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 30,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l30_bursty.csv",
+      "raw_sha256": "ed8977727081fffe24a6edb3b606bac9733f69997131709a33d33ea1e0889ddc"
+    },
+    {
+      "run_id": "test_s4002_l60_uniform",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 60,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l60_uniform.csv",
+      "raw_sha256": "0576a9801f1f561c4a30e7d060daa612d546e8cf4a5dd7a32f69fa93a14d92a2"
+    },
+    {
+      "run_id": "test_s4002_l60_hotspot",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 60,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l60_hotspot.csv",
+      "raw_sha256": "29569cfe3c5189c349c70be50464c6c7cc36dbfaa098c076c4dff041e43627e3"
+    },
+    {
+      "run_id": "test_s4002_l60_transpose",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 60,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l60_transpose.csv",
+      "raw_sha256": "e080a6a69b3573be294cdccdecbb5ff5cdbe84cf38108a74a6a90fff7994d567"
+    },
+    {
+      "run_id": "test_s4002_l60_bursty",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 60,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l60_bursty.csv",
+      "raw_sha256": "f169d54b0637aeb8cb70cabaeb04b4c374f2844c5644c773934db12ef4b9e39e"
+    },
+    {
+      "run_id": "test_s4002_l85_uniform",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 85,
+      "workload": "uniform",
+      "workload_id": 0,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l85_uniform.csv",
+      "raw_sha256": "4a7fa9c1de466fca5162ffe5a5500ec065a267e8bfe6681b3c9d02bf9cc97299"
+    },
+    {
+      "run_id": "test_s4002_l85_hotspot",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l85_hotspot.csv",
+      "raw_sha256": "e1ec159c2fabc00d0f3aeeb9840035bfb69fdeb9eee61adfaeedeba58bf83a14"
+    },
+    {
+      "run_id": "test_s4002_l85_transpose",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 85,
+      "workload": "transpose",
+      "workload_id": 2,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l85_transpose.csv",
+      "raw_sha256": "dbc045a348d6fa5279ea4fc762b79445a6412d4b8a0787525b979846e1479098"
+    },
+    {
+      "run_id": "test_s4002_l85_bursty",
+      "split": "test",
+      "seed": 4002,
+      "load_percent": 85,
+      "workload": "bursty",
+      "workload_id": 3,
+      "cycles": 96,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\raw\\test_s4002_l85_bursty.csv",
+      "raw_sha256": "9bd21d23423cce0338a0d24d63dccc8d4140b99987fe6bd15d7598459e3f9ecc"
+    }
+  ],
+  "dataset_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\run\\research-audit\\generalization\\dataset.csv",
+  "dataset_sha256": "e127078d0919563ec3f41ca59a0f12f28b316bba52190dbdd2c1ca525123ed83",
+  "dataset_rows": 36864
+}

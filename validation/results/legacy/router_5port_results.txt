@@ -1,0 +1,86 @@
+Five-port router test results
+
+TEST 1: FIFO, round-robin arbitration, and stable stalled grant
+TRACE t=25 in=00000 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11110 invalid=00000
+TRACE t=35 in=00010 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11110 invalid=00000
+TRACE t=35 input accepted at port=1 flit=000000000065
+TRACE t=45 in=00000 ready=11111 fifo_valid=00010 requests=0000000000000000000000010 grants=0000000000000000000000010 out_valid=00001 out_ready=11110 invalid=00000
+TRACE t=55 in=01000 ready=11111 fifo_valid=00010 requests=0000000000000000000000010 grants=0000000000000000000000010 out_valid=00001 out_ready=11110 invalid=00000
+TRACE t=55 input accepted at port=3 flit=000000000067
+TRACE t=65 in=00000 ready=11111 fifo_valid=01010 requests=0000000000000000000001010 grants=0000000000000000000000010 out_valid=00001 out_ready=11110 invalid=00000
+TRACE t=75 in=00001 ready=11111 fifo_valid=01010 requests=0000000000000000000001010 grants=0000000000000000000000010 out_valid=00001 out_ready=11110 invalid=00000
+TRACE t=75 input accepted at port=0 flit=000000000064
+TRACE t=85 in=00000 ready=11111 fifo_valid=01011 requests=0000000000000000000001011 grants=0000000000000000000000010 out_valid=00001 out_ready=11111 invalid=00000
+TRACE t=85 crossbar input=1 -> output=0 flit=000000000065
+TRACE t=95 in=00000 ready=11111 fifo_valid=01001 requests=0000000000000000000001001 grants=0000000000000000000001000 out_valid=00001 out_ready=11111 invalid=00000
+TRACE t=95 crossbar input=3 -> output=0 flit=000000000067
+TRACE t=105 in=00000 ready=11111 fifo_valid=00001 requests=0000000000000000000000001 grants=0000000000000000000000001 out_valid=00001 out_ready=11111 invalid=00000
+TRACE t=105 crossbar input=0 -> output=0 flit=000000000064
+  PASS
+TEST 2: all five destination routes
+TRACE t=115 in=00010 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=115 input accepted at port=1 flit=0000000000c8
+TRACE t=125 in=00000 ready=11111 fifo_valid=00010 requests=0000000000000000000000010 grants=0000000000000000000000010 out_valid=00001 out_ready=11111 invalid=00000
+TRACE t=125 crossbar input=1 -> output=0 flit=0000000000c8
+TRACE t=135 in=00100 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=135 input accepted at port=2 flit=2000000000c9
+TRACE t=145 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=145 crossbar input=2 -> output=1 flit=2000000000c9
+TRACE t=155 in=01000 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=155 input accepted at port=3 flit=4000000000ca
+TRACE t=165 in=00000 ready=11111 fifo_valid=01000 requests=0000000000010000000000000 grants=0000000000010000000000000 out_valid=00100 out_ready=11111 invalid=00000
+TRACE t=165 crossbar input=3 -> output=2 flit=4000000000ca
+TRACE t=175 in=00001 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=175 input accepted at port=0 flit=6000000000cb
+TRACE t=185 in=00000 ready=11111 fifo_valid=00001 requests=0000000001000000000000000 grants=0000000001000000000000000 out_valid=01000 out_ready=11111 invalid=00000
+TRACE t=185 crossbar input=0 -> output=3 flit=6000000000cb
+TRACE t=195 in=00001 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=195 input accepted at port=0 flit=8000000000cc
+TRACE t=205 in=00000 ready=11111 fifo_valid=00001 requests=0000100000000000000000000 grants=0000100000000000000000000 out_valid=10000 out_ready=11111 invalid=00000
+TRACE t=205 crossbar input=0 -> output=4 flit=8000000000cc
+  PASS
+TEST 3: simultaneous transfers on separate outputs
+TRACE t=215 in=00001 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=01011 invalid=00000
+TRACE t=215 input accepted at port=0 flit=40000000012e
+TRACE t=225 in=00000 ready=11111 fifo_valid=00001 requests=0000000000000010000000000 grants=0000000000000010000000000 out_valid=00100 out_ready=01011 invalid=00000
+TRACE t=235 in=00100 ready=11111 fifo_valid=00001 requests=0000000000000010000000000 grants=0000000000000010000000000 out_valid=00100 out_ready=01011 invalid=00000
+TRACE t=235 input accepted at port=2 flit=8000000001f8
+TRACE t=245 in=00000 ready=11111 fifo_valid=00101 requests=0010000000000010000000000 grants=0010000000000010000000000 out_valid=10100 out_ready=11111 invalid=00000
+TRACE t=245 crossbar input=0 -> output=2 flit=40000000012e
+TRACE t=245 crossbar input=2 -> output=4 flit=8000000001f8
+  PASS
+TEST 4: output backpressure and input FIFO capacity
+TRACE t=255 in=00100 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11101 invalid=00000
+TRACE t=255 input accepted at port=2 flit=200000000190
+TRACE t=265 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=275 in=00100 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=275 input accepted at port=2 flit=200000000191
+TRACE t=285 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=295 in=00100 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=295 input accepted at port=2 flit=200000000192
+TRACE t=305 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=315 in=00100 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=315 input accepted at port=2 flit=200000000193
+TRACE t=325 in=00000 ready=11011 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=335 in=00000 ready=11011 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=345 in=00000 ready=11011 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11101 invalid=00000
+TRACE t=355 in=00100 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=355 crossbar input=2 -> output=1 flit=200000000190
+TRACE t=355 input accepted at port=2 flit=200000000194
+TRACE t=365 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=365 crossbar input=2 -> output=1 flit=200000000191
+TRACE t=375 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=375 crossbar input=2 -> output=1 flit=200000000192
+TRACE t=385 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=385 crossbar input=2 -> output=1 flit=200000000193
+TRACE t=395 in=00000 ready=11111 fifo_valid=00100 requests=0000000000000000010000000 grants=0000000000000000010000000 out_valid=00010 out_ready=11111 invalid=00000
+TRACE t=395 crossbar input=2 -> output=1 flit=200000000194
+  PASS
+TEST 5: invalid destination is discarded and reported
+TRACE t=405 in=10000 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+TRACE t=405 input accepted at port=4 flit=e000000002c3
+TRACE t=415 in=00000 ready=11111 fifo_valid=10000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=10000
+TRACE t=415 invalid flit dropped at input=4 flit=e000000002c3
+TRACE t=425 in=00000 ready=11111 fifo_valid=00000 requests=0000000000000000000000000 grants=0000000000000000000000000 out_valid=00000 out_ready=11111 invalid=00000
+  PASS
+ALL TESTS PASSED (98 stage/transfer check points)

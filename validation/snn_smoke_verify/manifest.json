@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "label_horizon_cycles": 8,
+  "congestion_event": "blocked_streak >= 4 OR (downstream link FIFO occupancy >= 2 and a request is present)",
+  "workload_ids": {
+    "uniform": 0,
+    "hotspot": 1,
+    "transpose": 2,
+    "bursty": 3
+  },
+  "trace_cycles": 32,
+  "simulator_executable": "mesh_trace.vvp",
+  "simulator_versions": {
+    "iverilog": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+    "vvp": "Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)"
+  },
+  "compile_flags": [
+    "-g2012",
+    "-Wall",
+    "-s",
+    "mesh_trace_tb"
+  ],
+  "trace_configuration": {
+    "routing": "West-First",
+    "tf_pcr_enabled": true,
+    "snn_feature_capture": true,
+    "snn_route_feedback": false,
+    "equation_route_feedback": false,
+    "adaptive_buffer_pressure": true,
+    "priority_enabled": false,
+    "trace_router_nodes": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "link_fifo_depth": 2,
+    "sample_period_cycles": 1
+  },
+  "rtl_testbench": "sim/mesh/mesh_trace_tb.sv",
+  "seed_splits": {
+    "train": [
+      711
+    ],
+    "validation": [
+      722
+    ],
+    "test": [
+      733
+    ]
+  },
+  "loads": [
+    85
+  ],
+  "workloads": [
+    "hotspot"
+  ],
+  "runs": [
+    {
+      "run_id": "train_s711_l85_hotspot",
+      "split": "train",
+      "seed": 711,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke_verify\\raw\\train_s711_l85_hotspot.csv",
+      "raw_sha256": "023041a623e32438ab21265ae2b51581ffa4aad3554b42925caab8abd35645e4"
+    },
+    {
+      "run_id": "validation_s722_l85_hotspot",
+      "split": "validation",
+      "seed": 722,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke_verify\\raw\\validation_s722_l85_hotspot.csv",
+      "raw_sha256": "80fa5c8f084d40ea69aa107f7072d7cc09b98ff09be915151f4a9a1e52bed23a"
+    },
+    {
+      "run_id": "test_s733_l85_hotspot",
+      "split": "test",
+      "seed": 733,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke_verify\\raw\\test_s733_l85_hotspot.csv",
+      "raw_sha256": "6702f2fbe7abf44581f102fd6af6c6772d2b75eb249e0c620f10d06d85de2244"
+    }
+  ],
+  "dataset_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke_verify\\dataset.csv",
+  "dataset_sha256": "1c6b9aea5d67f9c0281c284dcc275c66fd8e8ea0d24383496af4d1a54a5d85fe",
+  "dataset_rows": 1536
+}

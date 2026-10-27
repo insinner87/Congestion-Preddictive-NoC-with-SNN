@@ -1,0 +1,595 @@
+{
+    "schema_version":  1,
+    "label_horizon_cycles":  8,
+    "congestion_event":  "blocked_streak \u003e= 4 OR (downstream link FIFO occupancy \u003e= 2 and a request is present)",
+    "workload_ids":  {
+                         "uniform":  0,
+                         "hotspot":  1,
+                         "transpose":  2,
+                         "bursty":  3
+                     },
+    "trace_cycles":  96,
+    "simulator_executable":  "mesh_trace.vvp",
+    "rtl_testbench":  "sim/mesh/mesh_trace_tb.sv",
+    "seed_splits":  {
+                        "train":  [
+                                      1001,
+                                      1002
+                                  ],
+                        "validation":  [
+                                           2001
+                                       ],
+                        "test":  [
+                                     3001
+                                 ]
+                    },
+    "loads":  [
+                  30,
+                  60,
+                  85
+              ],
+    "workloads":  [
+                      "uniform",
+                      "hotspot",
+                      "transpose",
+                      "bursty"
+                  ],
+    "runs":  [
+                 {
+                     "run_id":  "train_s1001_l30_uniform",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  30,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l30_uniform.csv",
+                     "raw_sha256":  "7011ab81b4e1f87e02550b4e28a1afcd57a377949db5b5a44004a92877ac50e2"
+                 },
+                 {
+                     "run_id":  "train_s1001_l30_hotspot",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  30,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l30_hotspot.csv",
+                     "raw_sha256":  "938478e5809e7aa4a89660ac56d09d58eb17b27aca740c4c62800e7be65cba9c"
+                 },
+                 {
+                     "run_id":  "train_s1001_l30_transpose",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  30,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l30_transpose.csv",
+                     "raw_sha256":  "cb7db7ab71bc22cbbd1d889758d0ec86f16c9c598cc01f8549d0065d905d28a1"
+                 },
+                 {
+                     "run_id":  "train_s1001_l30_bursty",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  30,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l30_bursty.csv",
+                     "raw_sha256":  "087c257e0bb8706f5825d729bb3dca1bca7d483a76012722bf7e729c629d3f50"
+                 },
+                 {
+                     "run_id":  "train_s1001_l60_uniform",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  60,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l60_uniform.csv",
+                     "raw_sha256":  "936f0c97fd6cdf5d08e42ed016cde76c0bce9a57020c36481d788c9afb5bfd03"
+                 },
+                 {
+                     "run_id":  "train_s1001_l60_hotspot",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  60,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l60_hotspot.csv",
+                     "raw_sha256":  "bc3bf675a6ba5f601d2a59a09a41dc2b1189a142451cd9ee44777397e00b159f"
+                 },
+                 {
+                     "run_id":  "train_s1001_l60_transpose",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  60,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l60_transpose.csv",
+                     "raw_sha256":  "1ece3609f64ed6c6630501a03c4ff14d2f5b0ce4614760ead3976aaf70752638"
+                 },
+                 {
+                     "run_id":  "train_s1001_l60_bursty",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  60,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l60_bursty.csv",
+                     "raw_sha256":  "76e3519a6ca93be1e5c44991eb1817e925a1351cd7e0d702f886eaf21063c8fa"
+                 },
+                 {
+                     "run_id":  "train_s1001_l85_uniform",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  85,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l85_uniform.csv",
+                     "raw_sha256":  "341022d2fc4721c50cac30b4a119c1d0fbd2533b85ce51539e89a43f52eff7bb"
+                 },
+                 {
+                     "run_id":  "train_s1001_l85_hotspot",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  85,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l85_hotspot.csv",
+                     "raw_sha256":  "6e8f97b6fc4593067fcbbd42fee32b4cd4e9648f348c9f479c652265bf4f2d6c"
+                 },
+                 {
+                     "run_id":  "train_s1001_l85_transpose",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  85,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l85_transpose.csv",
+                     "raw_sha256":  "f775ba9ef63771aadf3616f85ea7dd4583707c86ebbfa7929266e1b09e21b2c8"
+                 },
+                 {
+                     "run_id":  "train_s1001_l85_bursty",
+                     "split":  "train",
+                     "seed":  1001,
+                     "load_percent":  85,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1001_l85_bursty.csv",
+                     "raw_sha256":  "8e065f9ad7ab2e9ec172bcbfdabcb28b6033181f19d291b2311652e46e30c009"
+                 },
+                 {
+                     "run_id":  "train_s1002_l30_uniform",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  30,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l30_uniform.csv",
+                     "raw_sha256":  "77a6e58b6e4ee5ac365eb83af7dacb6a9b13199c7447747d53b7de06cb173747"
+                 },
+                 {
+                     "run_id":  "train_s1002_l30_hotspot",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  30,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l30_hotspot.csv",
+                     "raw_sha256":  "434a05d30774e11d9e7d9d1ae15d5967b139a8094e8cb8f6da96c91689b58e6a"
+                 },
+                 {
+                     "run_id":  "train_s1002_l30_transpose",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  30,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l30_transpose.csv",
+                     "raw_sha256":  "852703ad860518b71cc0de985f5005a80e0778d2d1f2bd61a5c591016f886557"
+                 },
+                 {
+                     "run_id":  "train_s1002_l30_bursty",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  30,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l30_bursty.csv",
+                     "raw_sha256":  "a861a294bc951776d53b0cffe07c4ff92e62e17012f5b93fd1f86601663284d6"
+                 },
+                 {
+                     "run_id":  "train_s1002_l60_uniform",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  60,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l60_uniform.csv",
+                     "raw_sha256":  "868abe4359dbfa225ac9ecc81a57a0271e50a7cb27fc6ed990b98fa92a49c77d"
+                 },
+                 {
+                     "run_id":  "train_s1002_l60_hotspot",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  60,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l60_hotspot.csv",
+                     "raw_sha256":  "7a57fdd6438d535623b3feaba968dea568a4b85f23f516da31df8beb2ae1682e"
+                 },
+                 {
+                     "run_id":  "train_s1002_l60_transpose",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  60,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l60_transpose.csv",
+                     "raw_sha256":  "c093136d086c05cb96df699397cf1c85fd805fa2248611d081e53475efa72377"
+                 },
+                 {
+                     "run_id":  "train_s1002_l60_bursty",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  60,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l60_bursty.csv",
+                     "raw_sha256":  "9279cc64a79cf4f0fff5299d3519fe9fae393527edcc55e258e1ca4400253d10"
+                 },
+                 {
+                     "run_id":  "train_s1002_l85_uniform",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  85,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l85_uniform.csv",
+                     "raw_sha256":  "f013f78885925c3450846786fd35845b68c75286d978ec1b5cb413c5c0848ee3"
+                 },
+                 {
+                     "run_id":  "train_s1002_l85_hotspot",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  85,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l85_hotspot.csv",
+                     "raw_sha256":  "28783e6f48c99d7700421cb18f37b533cbbc376e5bbac023329e507f9f42d893"
+                 },
+                 {
+                     "run_id":  "train_s1002_l85_transpose",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  85,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l85_transpose.csv",
+                     "raw_sha256":  "70ae57bc383b53d0bc721b1b070776f4ce016d4a55ed918d005dcf994a1e1f61"
+                 },
+                 {
+                     "run_id":  "train_s1002_l85_bursty",
+                     "split":  "train",
+                     "seed":  1002,
+                     "load_percent":  85,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\train_s1002_l85_bursty.csv",
+                     "raw_sha256":  "abf309523eacb5e2fc5f4f1d80bdd9c61d7e8904db166f73535933fb79cb276a"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l30_uniform",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  30,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l30_uniform.csv",
+                     "raw_sha256":  "a19b0e3cc5df97c206dafdd19de989fa6cd515dfe1f7da1b9184eab812f402d5"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l30_hotspot",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  30,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l30_hotspot.csv",
+                     "raw_sha256":  "1ad6efd5bb6d8603b5546279117b9a76717e5df8bd2a40bcfd87bc9bcbd7f741"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l30_transpose",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  30,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l30_transpose.csv",
+                     "raw_sha256":  "8adb0bdb9b7796b58bb8186d27b2a25de8f1c588509971c731d3962301eba7b1"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l30_bursty",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  30,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l30_bursty.csv",
+                     "raw_sha256":  "40f78a363def368177a6e98fb6262ea7649e859221c31e0fa4565cc6acee9f2e"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l60_uniform",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  60,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l60_uniform.csv",
+                     "raw_sha256":  "71e34a92ed4e44cbae4b94e146e9392ee409f6fc71bd9f08f002d1a3ab7ffff6"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l60_hotspot",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  60,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l60_hotspot.csv",
+                     "raw_sha256":  "fab430fae585d01bf7e8aacd573b520e0780ff138fc46f8ccd1fd6303eee289d"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l60_transpose",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  60,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l60_transpose.csv",
+                     "raw_sha256":  "53317968eb1e2ee8628baf6ddefc18bf0f3fafa7bb952e48cd3d240d404d9f01"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l60_bursty",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  60,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l60_bursty.csv",
+                     "raw_sha256":  "73a78230ca1924c31d27bd5e93bbae0134072ce804ca90a713e69783f8739848"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l85_uniform",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  85,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l85_uniform.csv",
+                     "raw_sha256":  "0a9b5f1e95cedc57239f461495d873b3c3369a1d999d5483a7051bae1d8e95e8"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l85_hotspot",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  85,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l85_hotspot.csv",
+                     "raw_sha256":  "a355152e1de4daffabfc6b830a3150f4f16dbf9579f59f38c25eb75780b585f3"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l85_transpose",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  85,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l85_transpose.csv",
+                     "raw_sha256":  "6019403207758044ce4433cb6f09ee65fac69905066274e865fecbf3ef2af87d"
+                 },
+                 {
+                     "run_id":  "validation_s2001_l85_bursty",
+                     "split":  "validation",
+                     "seed":  2001,
+                     "load_percent":  85,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\validation_s2001_l85_bursty.csv",
+                     "raw_sha256":  "1c897f7c91ec34a30dc4933f68126cc9c33b9c8469c2241e71ea9ca09e4b769c"
+                 },
+                 {
+                     "run_id":  "test_s3001_l30_uniform",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  30,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l30_uniform.csv",
+                     "raw_sha256":  "dee10401c59f45d10c25f2fbe010a2c81c5c5eef14281d213e88aff8f2ae2742"
+                 },
+                 {
+                     "run_id":  "test_s3001_l30_hotspot",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  30,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l30_hotspot.csv",
+                     "raw_sha256":  "581eb58b76dddba6f921f19031a375fd2e78855419d44e52f929ab72bd052590"
+                 },
+                 {
+                     "run_id":  "test_s3001_l30_transpose",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  30,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l30_transpose.csv",
+                     "raw_sha256":  "c689d1ad3ac345c68d4d034e4c22874042dd995e80ec6e239be4fd34ada7567d"
+                 },
+                 {
+                     "run_id":  "test_s3001_l30_bursty",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  30,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l30_bursty.csv",
+                     "raw_sha256":  "f99c1582d6c04b103ca84d1f9fa59bc5f5b82f9d3b966172ca7a56e15850bb8b"
+                 },
+                 {
+                     "run_id":  "test_s3001_l60_uniform",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  60,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l60_uniform.csv",
+                     "raw_sha256":  "e269b8efe4828ec174d017a890d19799362670160ed79c2db7c7c7fe10203c93"
+                 },
+                 {
+                     "run_id":  "test_s3001_l60_hotspot",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  60,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l60_hotspot.csv",
+                     "raw_sha256":  "8b3c518abb8cce88f0c5c6b6794b3c8a2d583a51a798b993b30269d9c90014d5"
+                 },
+                 {
+                     "run_id":  "test_s3001_l60_transpose",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  60,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l60_transpose.csv",
+                     "raw_sha256":  "5a53033653b1f8217a352a965572cdc3c8887ff484dd5ca51f0631996c1572c7"
+                 },
+                 {
+                     "run_id":  "test_s3001_l60_bursty",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  60,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l60_bursty.csv",
+                     "raw_sha256":  "1ce59d940d808946875c3ba18d52a393e8a771a165a8a692bd6cc18fc71510e3"
+                 },
+                 {
+                     "run_id":  "test_s3001_l85_uniform",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  85,
+                     "workload":  "uniform",
+                     "workload_id":  0,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l85_uniform.csv",
+                     "raw_sha256":  "b5a5313e07b002e3b68eb3fb2f3abd81db5895c472dd9792ef7b2cdd25c1c9ba"
+                 },
+                 {
+                     "run_id":  "test_s3001_l85_hotspot",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  85,
+                     "workload":  "hotspot",
+                     "workload_id":  1,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l85_hotspot.csv",
+                     "raw_sha256":  "75a4bf473c46f56da0de88ca84ba2b26e768dfa1d2230446e482bebed05c1695"
+                 },
+                 {
+                     "run_id":  "test_s3001_l85_transpose",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  85,
+                     "workload":  "transpose",
+                     "workload_id":  2,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l85_transpose.csv",
+                     "raw_sha256":  "d7c097fa0dcc2ac2ae67926eb992e2ddc570cd6fed655fb01a7b7da3f01a8111"
+                 },
+                 {
+                     "run_id":  "test_s3001_l85_bursty",
+                     "split":  "test",
+                     "seed":  3001,
+                     "load_percent":  85,
+                     "workload":  "bursty",
+                     "workload_id":  3,
+                     "cycles":  96,
+                     "raw_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\raw\\test_s3001_l85_bursty.csv",
+                     "raw_sha256":  "18851a898725865fa276fd835c5ed521da7a3a5712229ea69a5a3edfa1a355f3"
+                 }
+             ],
+    "dataset_file":  "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_experiment\\dataset.csv",
+    "dataset_sha256":  "470cc840113dc7ce5af86f0a4378d0e82433f559cf763c29bd7254fd6c627150",
+    "dataset_rows":  73728,
+    "simulator_version":  "Icarus Verilog/VVP 12.0 (devel) (s20150603-1539-g2693dd32b)",
+    "trace_configuration":  {
+                                "routing":  "West-First",
+                                "tf_pcr_enabled":  true,
+                                "snn_feature_capture":  true,
+                                "snn_route_feedback":  false,
+                                "equation_route_feedback":  false,
+                                "adaptive_buffer_pressure":  true,
+                                "priority_enabled":  false,
+                                "trace_router_nodes":  [
+                                                           5,
+                                                           6,
+                                                           9,
+                                                           10
+                                                       ],
+                                "link_fifo_depth":  2,
+                                "sample_period_cycles":  1,
+                                "compile_flags":  [
+                                                      "-g2012",
+                                                      "-Wall",
+                                                      "-s",
+                                                      "mesh_trace_tb"
+                                                  ]
+                            },
+    "training_runtime":  "Python 3.11.9; python.exe :   File \"\u003cstring\u003e\", line 1\r\nAt line:2 char:847\r\n+ ... packages = (\u0026 $pyExe -c \u0027import numpy, sklearn; print(f\"NumPy {numpy. ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (  File \"\u003cstring\u003e\", line 1:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n    import numpy, sklearn; print(fNumPy\r\n                                ^\r\nSyntaxError: \u0027(\u0027 was never closed"
+}

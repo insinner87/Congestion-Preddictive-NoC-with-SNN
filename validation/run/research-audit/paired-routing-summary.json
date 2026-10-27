@@ -1,0 +1,201 @@
+{
+  "n_independent_seeds": 10,
+  "seeds": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010
+  ],
+  "comparisons": {
+    "average_latency": {
+      "west_first_mean": 8.052299999999999,
+      "equation_mean": 8.052299999999999,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "p95_latency": {
+      "west_first_mean": 22.7,
+      "equation_mean": 22.7,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "p99_latency": {
+      "west_first_mean": 53.3,
+      "equation_mean": 53.3,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "throughput": {
+      "west_first_mean": 0.34016,
+      "equation_mean": 0.34016,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "blocked_output_cycles": {
+      "west_first_mean": 99.0,
+      "equation_mean": 99.0,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "network_congested_cycles": {
+      "west_first_mean": 52.0,
+      "equation_mean": 52.0,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "longest_congestion_cycles": {
+      "west_first_mean": 43.0,
+      "equation_mean": 43.0,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "random_phase_alternate_hops": {
+      "west_first_mean": 0.0,
+      "equation_mean": 0.0,
+      "paired_difference_equation_minus_west_first": 0.0,
+      "paired_difference_sd": 0.0,
+      "paired_95pct_t_ci": [
+        0.0,
+        0.0
+      ],
+      "cohens_dz": null,
+      "per_seed_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

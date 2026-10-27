@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "label_horizon_cycles": 8,
+  "congestion_event": "blocked_streak >= 4 OR (downstream link FIFO occupancy >= 2 and a request is present)",
+  "workload_ids": {
+    "uniform": 0,
+    "hotspot": 1,
+    "transpose": 2,
+    "bursty": 3
+  },
+  "trace_cycles": 32,
+  "simulator_executable": "mesh_trace.vvp",
+  "rtl_testbench": "sim/mesh/mesh_trace_tb.sv",
+  "seed_splits": {
+    "train": [
+      1111
+    ],
+    "validation": [
+      2222
+    ],
+    "test": [
+      3333
+    ]
+  },
+  "loads": [
+    85
+  ],
+  "workloads": [
+    "hotspot"
+  ],
+  "runs": [
+    {
+      "run_id": "train_s1111_l85_hotspot",
+      "split": "train",
+      "seed": 1111,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke\\raw\\train_s1111_l85_hotspot.csv",
+      "raw_sha256": "707070152c652e4c2bbd9b7b84769d0215b42930c4e9eaaa2b9f0d5420b51545"
+    },
+    {
+      "run_id": "validation_s2222_l85_hotspot",
+      "split": "validation",
+      "seed": 2222,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke\\raw\\validation_s2222_l85_hotspot.csv",
+      "raw_sha256": "e71888c8c21f694544848681ee651fba5fe997b271056b3403daf18d1dd7d1cc"
+    },
+    {
+      "run_id": "test_s3333_l85_hotspot",
+      "split": "test",
+      "seed": 3333,
+      "load_percent": 85,
+      "workload": "hotspot",
+      "workload_id": 1,
+      "cycles": 32,
+      "raw_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke\\raw\\test_s3333_l85_hotspot.csv",
+      "raw_sha256": "1647c98dfc73cf19e1463df8d44a9de148d7a2e79190038d38cbab7f87d293c4"
+    }
+  ],
+  "dataset_file": "C:\\Users\\legen\\Desktop\\Capstone research\\Temporal and Freq - Copy\\validation\\snn_smoke\\dataset.csv",
+  "dataset_sha256": "b6b6c909e380ef725119503e9ce8cb2ad8f25083b80c57b3483e71be985186ab",
+  "dataset_rows": 1536
+}
