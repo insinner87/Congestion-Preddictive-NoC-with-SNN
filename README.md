@@ -13,7 +13,6 @@ in [docs/snn_training_and_accuracy.md](docs/snn_training_and_accuracy.md),
 with the seven hardware-visible signals defined in
 [docs/feature_specification.md](docs/feature_specification.md).
 
-## Run scripts
 # Run Tutorial
 
 This guide documents the validated SNN training and RTL export flow for the congestion-predictive NoC project, along with the current blocker in the trace-generation step.
@@ -147,8 +146,9 @@ Because trace generation stopped partway through, some raw trace files may no lo
 
 ## Recommended next step
 
-Fix the traffic-integrity issue in `sim\mesh\mesh_trace_tb.sv` and the random-traffic generation path, then rerun:
+Fix the traffic-integrity issue in `sim\mesh\mesh_trace_tb.sv` and the random-traffic generation path, then rerun: 
 
+## Run scripts
 ```powershell
 & "$env:TEMP\capstone-snn-venv\Scripts\python.exe" .\tools\generate_noc_traces.py
 & "$env:TEMP\capstone-snn-venv\Scripts\python.exe" .\tools\train_noc_snn.py
