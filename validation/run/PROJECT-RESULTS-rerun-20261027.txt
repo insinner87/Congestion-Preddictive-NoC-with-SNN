@@ -1,5 +1,5 @@
 TF-PCR 4x4 NoC - full project validation
-Started: 2026-10-27 12:31:56 +05:30
+Started: 2026-10-30 13:27:40 +05:30
 Project: C:\Users\legen\Desktop\Capstone research\Temporal and Freq with SNN exp
 Icarus run output: C:\Users\legen\Desktop\Capstone research\Temporal and Freq with SNN exp\validation\run\project-rerun-20261027
 
@@ -2459,4 +2459,4 @@ ALL MESH TESTS PASSED: mode=1 packets=796, no drops/duplicates/corruption
 sim\mesh/mesh_noc_tb_scenarios.svh:319: $finish called at 25920 (1s)
 
 FINAL RESULT: ALL TESTS PASSED
-Completed: 2026-10-27 12:38:34 +05:30
+Completed: 2026-10-30 13:32:52 +05:30

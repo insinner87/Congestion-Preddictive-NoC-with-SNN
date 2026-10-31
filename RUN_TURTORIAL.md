@@ -15,6 +15,10 @@ The project was rerun successfully on the existing dataset and validation pipeli
 
 ## Requirements
 
+I reran the SNN training, model exports, all RTL regressions, and accuracy evaluation. **The 21 RTL regressions passed.** Fresh trace generation did not: it stopped on a traffic-integrity error, so the accuracy below is measured on the project’s existing dataset, not a newly generated one.
+
+## What you need
+
 - Windows PowerShell
 - Python 3.11+
 - NumPy and scikit-learn

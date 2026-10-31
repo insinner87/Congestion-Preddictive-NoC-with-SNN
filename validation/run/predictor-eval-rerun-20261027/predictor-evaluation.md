@@ -16,17 +16,9 @@ Prediction horizon: 8 cycles
 - SNN per-seed accuracy: 3001=0.9628
 
 ## End-to-end routing regressions
-- `mesh-xy`: passed
-  - latency mean/max=8.196/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-- `mesh-west-first`: passed
-  - latency mean/max=8.196/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-- `mesh-west-first-baseline`: passed
-  - latency mean/max=8.196/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-- `mesh-west-first-snn`: passed
-  - latency mean/max=8.195/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-- `mesh-west-first-equation`: passed
-  - latency mean/max=8.195/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-- `mesh-west-first-adaptive`: passed
-  - latency mean/max=8.196/61 cycles; throughput=0.3324 packets/cycle; delivered=796
-  - initial selections SNN/math=0/80; model cycles SNN/math=202671/3889; switches SNN/math=88/8
-  - selection-event reason counts: {'3': 80, '1': 88, '4': 8}
+- `mesh-xy`: not_run
+- `mesh-west-first`: not_run
+- `mesh-west-first-baseline`: not_run
+- `mesh-west-first-snn`: not_run
+- `mesh-west-first-equation`: not_run
+- `mesh-west-first-adaptive`: not_run
